@@ -1,16 +1,29 @@
-<html lang="en">
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
 
-    <head>
+{% block header %}
+    <a class="navbar-brand" href="{{ url_for('index') }}">
+        <span class="blue">P</span>
+        <span class="red">L</span>
+        <span class="yellow">A</span>
+        <span class="green">Y</span>
+        <span class="red">GROUND</span>
+    </a>
+{% endblock %}
 
-        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
-        <meta charset="utf-8"/>
-        <meta content="initial-scale=1, width=device-width" name="viewport"/>
-        <title>Playground</title>
-
-    </head>
-    <body>
-        Server
-            IP: {{info['ip']}}
-            OS: {{ info['os']}}
-    </body>
-</html>
+{% block main %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>IP</th>
+                <th>OS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{info['ip']}}</td>
+                <td>{{info['os']}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
