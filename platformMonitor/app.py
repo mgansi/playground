@@ -1,5 +1,6 @@
 from flask import Flask, render_template
-import serverInfo
+
+from platformMonitor.lib import serverInfo
 
 app = Flask(__name__)
 

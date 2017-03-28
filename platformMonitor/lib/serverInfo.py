@@ -1,6 +1,7 @@
 from flask import request
 import os
 
+
 class ServerInfo:
     def __init__(self, x):
         self.x = x
