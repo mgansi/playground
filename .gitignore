@@ -1,2 +1,17 @@
-# Ignore .idea folder
-/.idea/
+# For sharing project settings, .idea project configuration directory should be shared via version control.
+# If you decide to share PyCharm project files with the other developers, follow these guidelines.
+
+# Directory based project format (.idea directory) is used by all the PyCharm versions by default. Here is what you need to share:
+
+# All the files under .idea directory in the project root, except the workspace.xml and tasks.xml files, which store user-specific settings.
+
+# Be careful about sharing the following:
+# dataSources.ids, datasources.xml (can contain database passwords)
+
+# You may consider not to share the following:
+# user dictionaries folder (to avoid conflicts if another developer has the same name).
+
+# ----------------------------------------------------------------------------------------------------------------------
+# Ignore user specific pycharm project workspace
+/.idea/workspace.xml
+
